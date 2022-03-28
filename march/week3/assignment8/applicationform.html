@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geekster</title>
+    <style>
+       li{
+           display: inline;
+           padding: 10px;
+       } 
+        li > ul{
+            display: none;
+        }
+        li:hover ul{
+            display: block;
+            position: absolute;
+        }
+        .main{
+                        
+            padding-left: 60vh;
+            
+            
+        }
+        select{
+            width: 350px;
+            height: 50px;
+            margin-left: 30px;
+            
+        }
+        input{
+            padding: 10px;
+            width: 320px;
+            height: 25px;
+            margin-left: 30px;
+        }
+       .content{
+           border: 10px black;
+       }
+       label{
+           margin-left: 30px;
+       }
+
+       
+    </style>
+</head>
+<body>
+   
+    <div class="main" >
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a></li>
+                <li><a href="#">Courses</a>
+                    <ul>
+                        <li><a href="#">web development</a></li>
+                        <li><a href="#">java development</a></li>
+                    </ul>
+                    <li><a href="#">Hire Geeksters</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </li>
+                
+    
+            </ul>
+        </nav> 
+
+    </div>
+    <br>
+    <hr>
+    <div1 style=" background-color: brown;">
+        <h1 style="color: green; margin-left: 80vh;"> Application Form</h1> 
+      
+        <form style="background-color: rgb(203, 212, 212);padding: 40px; width: 110vh; margin-left: 40vh; height: 65vh;">
+            <label for="name" "> Full Name</label>
+            
+            <label for="mail id" style="margin-left: 40vh;" > Email</label><br><br>
+
+            <input type="text" id="name"  placeholder="enter your name" name="full name">
+            
+            
+            <input type="email" id="ID"  placeholder="enter your mail" name="mail id"><br><br>
+            <label for="course">select your course</label>:<br><br>
+            
+             <select id="course" name="course" style=" width: 70vh;">
+                <option value="web development course">web development course</option>
+                <option value="java">java</option>
+            </select><br><br>
+           
+            <label for="number" > mobile number</label>
+             
+             <label for="Degree" style="margin-left: 280px;">Highest Degree</label>:<br><br>
+
+            <input type="text" id="num"  placeholder="enter contact number" name="number" maxlength="10">
+           
+            
+            <select id="Degree" name="Degree">
+                <option value="1"></option>
+                <option value="2"></option>
+            </select><br><br>
+
+            <label for="com">Select your completion</label>:
+            <label for="skill" style="margin-left: 220px;">programming skill</label>:<br><br>
+
+            <select id="com" name="com">
+                <option value="1" ></option>
+                <option value="2"></option>
+            </select>
+            
+            <select id="skill" name="skill">
+                <option value="1"></option>
+                <option value="2"></option>
+            </select>
+            <br>
+            <div style="margin-top: 70px;"> 
+                <input type="submit" id="sub" value="Submit" name="sub" style="background-color: green; border-radius: 7px; 
+                color: white; width: 12vh; height: 37px; text-align: center;">
+            </div>
+             
+        </form>
+    <from>
+        <input type="apply" id="sub" value="Apply Now" name="apply" readonly style="background-color: green; border-radius: 7px; 
+        color: white; width: 12vh; height: 25px; position: fixed; top: 10px; right: 50px; text-align: center;">
+    </from>
+    <h2 style="color: green; position: absolute;top: 10px;"><i> Geekster</i></h2>
+    </div1>
+</body>
+</html>
